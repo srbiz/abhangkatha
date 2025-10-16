@@ -3,13 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>अभंग कथा संग्रह - Spiritual Stories & Abhangs Collection</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Abhang Katha Sangrah - Spiritual Stories & Abhangs Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@3.3.2/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <meta name="description" content="Discover the rich spiritual heritage of Maharashtra with Abhang Katha Sangrah - a comprehensive collection of abhangs and stories of saints.">
-  <script type="module" crossorigin src="/assets/index-DmhFz5im.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-k2lSfZaZ.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <v-app>
+      <!-- Header -->
+      <v-app-bar color="indigo-darken-4" app dark>
+        <v-app-bar-title class="text-h5 font-weight-bold">अभंग कथा संग्रह</v-app-bar-title>
+        <v-spacer></v-spacer>
+        <v-btn variant="text" href="#features">Features</v-btn>
+        <v-btn variant="text" href="#download">Download</v-btn>
+        <v-btn variant="text" href="privacy.html">Privacy Policy</v-btn>
+      </v-app-bar>
+
+      <!-- Hero Section -->
+      <v-container fluid class="hero-section d-flex align-center">
+        <v-row>
+          <v-col cols="12" md="6" class="text-center text-md-left pa-8">
+            <h1 class="text-h2 font-weight-bold mb-4">अभंग कथा संग्रह</h1>
+            <h2 class="text-h5 mb-6">Discover the rich spiritual heritage of Maharashtra</h2>
+            <p class="text-body-1 mb-8">Explore a comprehensive collection of abhangs and stories of saints in an elegant, user-friendly mobile application.</p>
+            <v-btn color="indigo-darken-3" size="x-large" href="#download" class="text-white px-8 py-3">
+              Download Now
+              <v-icon end>mdi-download</v-icon>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" md="6" class="text-center">
+            <v-img src="images/app-showcase.png" alt="Abhang Katha Sangrah App" max-width="400" class="mx-auto"></v-img>
+          </v-col>
+        </v-row>
+      </v-container>
+
+      <!-- Features Section -->
+      <v-container id="features" class="py-12">
+        <h2 class="text-h4 text-center font-weight-bold mb-10">Key Features</h2>
+        <v-row>
+          <v-col cols="12" md="4">
+            <v-card class="mx-auto feature-card" elevation="2">
+              <v-card-item>
+                <v-icon size="x-large" color="indigo-darken-3" class="mb-4">mdi-book-open-page-variant</v-icon>
+                <v-card-title class="text-h5 font-weight-bold">Extensive Collection</v-card-title>
+                <v-card-text>
+                  <p>Access a vast library of abhangs and spiritual stories from Maharashtra's rich tradition.</p>
+                </v-card-text>
+              </v-card-item>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-card class="mx-auto feature-card" elevation="2">
+              <v-card-item>
+                <v-icon size="x-large" color="indigo-darken-3" class="mb-4">mdi-magnify</v-icon>
+                <v-card-title class="text-h5 font-weight-bold">Powerful Search</v-card-title>
+                <v-card-text>
+                  <p>Find specific abhangs or stories quickly with our intuitive search functionality.</p>
+                </v-card-text>
+              </v-card-item>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-card class="mx-auto feature-card" elevation="2">
+              <v-card-item>
+                <v-icon size="x-large" color="indigo-darken-3" class="mb-4">mdi-theme-light-dark</v-icon>
+                <v-card-title class="text-h5 font-weight-bold">Dark Mode</v-card-title>
+                <v-card-text>
+                  <p>Enjoy comfortable reading with light and dark themes for any time of day.</p>
+                </v-card-text>
+              </v-card-item>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row class="mt-6">
+          <v-col cols="12" md="4">
+            <v-card class="mx-auto feature-card" elevation="2">
+              <v-card-item>
+                <v-icon size="x-large" color="indigo-darken-3" class="mb-4">mdi-cellphone-link</v-icon>
+                <v-card-title class="text-h5 font-weight-bold">Offline Access</v-card-title>
+                <v-card-text>
+                  <p>Read your favorite content without an internet connection, perfect for on-the-go spiritual learning.</p>
+                </v-card-text>
+              </v-card-item>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-card class="mx-auto feature-card" elevation="2">
+              <v-card-item>
+                <v-icon size="x-large" color="indigo-darken-3" class="mb-4">mdi-view-dashboard</v-icon>
+                <v-card-title class="text-h5 font-weight-bold">Multiple View Modes</v-card-title>
+                <v-card-text>
+                  <p>Switch between list and grid views to browse content in your preferred format.</p>
+                </v-card-text>
+              </v-card-item>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-card class="mx-auto feature-card" elevation="2">
+              <v-card-item>
+                <v-icon size="x-large" color="indigo-darken-3" class="mb-4">mdi-account-group</v-icon>
+                <v-card-title class="text-h5 font-weight-bold">Saint Profiles</v-card-title>
+                <v-card-text>
+                  <p>Learn about the lives and teachings of Maharashtra's revered saints and their contributions.</p>
+                </v-card-text>
+              </v-card-item>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+
+      <!-- Download Section -->
+      <v-container id="download" fluid class="download-section py-12 text-center">
+        <h2 class="text-h4 font-weight-bold mb-6">Download Now</h2>
+        <p class="text-body-1 mb-8 mx-auto" style="max-width: 600px;">Experience the spiritual wisdom of Maharashtra's saints on your mobile device. Available for Android.</p>
+        <div class="d-flex justify-center flex-wrap">
+          <v-btn color="black" size="x-large" href="https://play.google.com/store/apps/details?id=com.abhangkathasangrah.app" target="_blank" class="text-white mx-2 my-2 download-btn">
+            <v-icon start>mdi-google-play</v-icon>
+            Google Play
+          </v-btn>
+        </div>
+      </v-container>
+
+      <!-- Footer -->
+      <v-footer app color="indigo-darken-4" dark class="py-4">
+        <v-container>
+          <v-row>
+            <v-col cols="12" md="6" class="text-center text-md-left">
+              <p class="mb-0">&copy; 2024 Abhang Katha Sangrah. All rights reserved.</p>
+            </v-col>
+            <v-col cols="12" md="6" class="text-center text-md-right">
+              <v-btn variant="text" href="privacy.html" class="text-white">Privacy Policy</v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-footer>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@3.3.2/dist/vuetify.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
